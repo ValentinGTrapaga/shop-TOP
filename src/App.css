@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Lato:wght@300;400;700;900&display=swap');
+
+#root {
+  --primary: #EEDDCC;
+  --secondary: #D2B79E;
+  --text-primary: #34251F;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+.App {
+  background-color: var(--primary);
+}
