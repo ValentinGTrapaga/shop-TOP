@@ -59,6 +59,7 @@
     border-radius: 2px;
     padding: 8px 18px;
     text-decoration: none;
+    cursor: pointer;
     filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.3));
     margin-top: 1.5rem;
     z-index: 1;
@@ -79,6 +80,7 @@
     box-shadow: 30px 20px 50px rgba(129, 105, 84, 0.322);
     border-radius: 4px;
     z-index: 100;
+    border: 1px solid rgba(117, 98, 82, 0.5);
 }
 
 .drawings {
@@ -138,17 +140,4 @@
     background: linear-gradient(360deg, #D3A17E -21.17%, rgba(211, 161, 126, 0) 115.88%);
     opacity: 0.35;
     transform: rotate(180deg);
-}
-
-.svgs {
-    position: absolute;
-    bottom: 25px;
-    margin: 0px;
-    padding: 0px;
-}
-
-.svgs svg {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
 }

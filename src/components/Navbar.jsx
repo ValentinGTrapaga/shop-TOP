@@ -5,7 +5,7 @@ import './navbar.css'
 const Navbar = () => {
   return (
     <nav>
-      <h3 className='navTitle'>FIFASH</h3>
+      <h3 className='navTitle'>FIFASH </h3>
       <ul>
         <li className='category'>Women's Clothing</li>
         <li className='category'>Men's Clothing</li>
