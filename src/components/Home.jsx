@@ -1,5 +1,6 @@
 import Model from '../assets/home-model-2.jpg'
-import './home.css'
+import '../styles/home.css'
+import '../styles/productCard.css'
 
 const Home = () => {
   return (
@@ -13,13 +14,15 @@ const Home = () => {
         <button>Shop NOW</button>
       </div>
       <div className='panel-2'>
-        <div className='linearGradVert-top'></div>
-        <div className='linearGradHorizontal-top'></div>
-        <div className='drawings'>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</div>
         <img src={Model} alt='Model image' className='modelHomePage' />
-        <div className='linearGradVert'></div>
-        <div className='linearGradHorizontal'></div>
       </div>
+      <div className='linearGradVert-top' />
+      <div className='linearGradHorizontal-top' />
+      <div className='linearGradVert' />
+      <div className='linearGradHorizontal' />
+      <div className='drawings'>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</div>
+      <div className='drawingsBottom'>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</div>
+
     </div>
   )
 }

@@ -1,18 +1,14 @@
 import React from 'react'
-import { FiShoppingBag } from 'react-icons/fi'
-import './navbar.css'
+import '../styles/navbar.css'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav>
-      <h3 className='navTitle'>FIFASH </h3>
-      <ul>
-        <li className='category'>Women's Clothing</li>
-        <li className='category'>Men's Clothing</li>
-        <li className='category'>Electronics</li>
-        <li className='category'>Jewelery</li>
-      </ul>
-      <FiShoppingBag className='shopIcon' />
+      <NavLink to='/' className='navTitle'>FIFASH </NavLink>
+      <NavLink to='/' className='category'>Home </NavLink>
+      <NavLink to='/shop' className='category'>Shop </NavLink>
+      <NavLink to='/contact' className='category'>Contact </NavLink>
     </nav>
   )
 }

@@ -9,18 +9,14 @@ nav {
     height: 80px;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    gap: 0.7rem;
-}
-
-li {
+.category {
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--text-primary);
+    z-index: 9999;
 }
 
 .shopIcon {
@@ -31,7 +27,14 @@ li {
 }
 
 .navTitle {
+    text-decoration: none;
     letter-spacing: 0.15em;
     font-weight: 900;
     font-size: 30px;
+}
+
+.navTitle:visited,
+.category:visited {
+    text-decoration: none;
+    color: var(--text-primary);
 }
