@@ -1,0 +1,54 @@
+.shoppingCartItem {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    margin: 1rem;
+    width: 90%;
+    background-color: var(--primary);
+    border: 1px solid var(--text-primary);
+    box-shadow: 2px 2px 10px var(--text-primary);
+}
+
+.shoppingCartItem img {
+    height: 100px;
+    object-fit: cover;
+}
+
+.itemShoppingCartDescription {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.itemTitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.itemQuantity {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+
+.itemShoppingCartPrices {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+h2,
+h3,
+h4,
+h6 {
+    margin: 0px;
+}
+
+h2 {
+    margin-left: auto;
+}

@@ -1,5 +1,5 @@
 nav {
-    max-width: 1000px;
+    width: 1000px;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
@@ -23,10 +23,26 @@ nav {
 .shopIcon {
     height: 24px;
     width: 24px;
-    stroke: var(--text-primary);
     opacity: 1;
+    z-index: 1001;
+    fill: var(--primary);
+}
+
+.shopIconDiv {
+    content: '';
+    z-index: 1000;
+    right: 100px;
+    height: 45px;
+    width: 45px;
+    display: grid;
+    place-items: center;
     cursor: pointer;
     z-index: 1000;
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    background-color: var(--text-primary);
 }
 
 .navTitle {

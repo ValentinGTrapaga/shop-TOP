@@ -10,3 +10,14 @@
     width: calc(100% - 150px);
     padding-left: 1rem;
 }
+
+.errorDiv {
+    margin: auto;
+    height: calc(100vh - 80px);
+    display: grid;
+    place-items: center;
+}
+
+.errorShop {
+    font-size: 3rem;
+}

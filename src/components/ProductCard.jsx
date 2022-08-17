@@ -9,6 +9,7 @@ const ProductCard = ({ product }) => {
   const category = product.category.name
   const { getItemQuantity, increaseItemQuantity, decreaseItemQuantity } = useShoppingCart()
   const quantity = getItemQuantity(id)
+
   return (
     <div className='productCard'>
       <img src={image} alt={title} className='productImg' />
