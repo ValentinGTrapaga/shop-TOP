@@ -20,7 +20,7 @@ const Shop = () => {
     <div className='shop'>
       <SideBarShop />
       <div className='productsContainer'>
-        {productCards || <h1 className='errorShop'>Error loading the items, sorry 😣</h1>}
+        {productCards || <h1 className='errorShop'>Error loading the items, sorry 😣</h1>} {/* TODO: Error */}
       </div>
     </div>
   )

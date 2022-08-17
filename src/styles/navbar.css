@@ -7,6 +7,7 @@ nav {
     justify-content: space-between;
     color: var(--text-primary);
     height: 80px;
+    position: relative;
 }
 
 .category {
@@ -16,7 +17,7 @@ nav {
     letter-spacing: 1px;
     text-decoration: none;
     color: var(--text-primary);
-    z-index: 9999;
+    z-index: 998;
 }
 
 .shopIcon {
@@ -24,6 +25,8 @@ nav {
     width: 24px;
     stroke: var(--text-primary);
     opacity: 1;
+    cursor: pointer;
+    z-index: 1000;
 }
 
 .navTitle {

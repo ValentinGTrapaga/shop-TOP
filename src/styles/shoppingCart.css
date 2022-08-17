@@ -1,0 +1,9 @@
+.shoppingCartContainer {
+    height: 100%;
+    width: 700px;
+    background-color: green;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 999;
+}
