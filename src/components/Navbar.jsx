@@ -16,7 +16,6 @@ const Navbar = () => {
         <NavLink to='/' className='navTitle'>FIFASH </NavLink>
         <NavLink to='/' className='category'>Home </NavLink>
         <NavLink to='/shop' className='category'>Shop </NavLink>
-        <NavLink to='/contact' className='category'>Contact </NavLink>
         <div className='shopIconDiv' onClick={showShoppingCart}>
           <RiShoppingBag3Fill className='category shopIcon' />
         </div>
