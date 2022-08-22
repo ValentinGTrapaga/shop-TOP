@@ -1,14 +1,10 @@
-.shop {
-    display: flex;
-    flex-direction: row;
-}
-
 .productsContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     width: calc(100% - 150px);
     padding-left: 1rem;
+    margin: auto;
 }
 
 .errorDiv {

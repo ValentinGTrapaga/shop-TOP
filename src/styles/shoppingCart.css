@@ -10,7 +10,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border-left: 1px solid var(--text-primary);
     border-bottom: 1px solid var(--text-primary);
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    scrollbar-width: 0px;
+}
+
+.itemsCardsDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }

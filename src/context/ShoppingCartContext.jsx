@@ -14,7 +14,9 @@ export function ShoppingCartProvider ({ children }) {
   useEffect(() => {
     fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=100')
       .then((res) => res.json())
-      .then((res) => setProducts(res))
+      .then((res) => {
+        setProducts(res)
+      })
       .catch((err) => console.error(err))
   }, [])
 

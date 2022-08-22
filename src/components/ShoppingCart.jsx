@@ -20,7 +20,9 @@ export const ShoppingCart = () => {
       {cartItems.length > 0
         ? (
           <div className='shoppingCartContainer'>
-            {itemsCards}
+            <div className='itemsCardsDiv'>
+              {itemsCards}
+            </div>
             <h2>Total: {formatCurrency(
               cartItems.reduce((total, cartItem) => {
                 const item = products.find(i => i.id === cartItem.id)

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import ProductCard from './ProductCard'
 import '../styles/productCard.css'
 import '../styles/shop.css'
-import SideBarShop from './SideBarShop'
 import { useShoppingCart } from '../context/ShoppingCartContext'
 
 const Shop = () => {
@@ -14,7 +13,6 @@ const Shop = () => {
 
   return (
     <div className='shop'>
-      <SideBarShop />
       {productCards
         ? (
           <div className='productsContainer'>{productCards}</div>
