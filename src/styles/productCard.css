@@ -12,9 +12,9 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .productCard {
-    margin: 4px;
-    height: 400px;
+    /* height: 400px; */
     width: 95%;
+    margin: 6px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
