@@ -1,23 +1,22 @@
-/* * {
-    border: 1px solid black;
-} */
-
 .homePanel {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     max-width: 1000px;
     margin: 0px auto;
     color: var(--text-primary);
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
 }
 
 .panel-1 {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
+    text-align: right;
     height: 100%;
     gap: 1rem;
 }
@@ -27,25 +26,23 @@
     font-family: 'Frank Ruhl Libre';
     font-style: normal;
     font-weight: 900;
-    font-size: 52px;
+    font-size: 3.5rem;
     line-height: 64px;
     text-transform: capitalize;
     margin: 0px;
 }
 
 .panel-1 h4 {
-    font-family: 'Frank Ruhl Libre';
     width: 80%;
     font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 31px;
-    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 30px;
     margin: 0px;
 }
 
-.panel-1 button {
-    background-color: rgb(10, 10, 10);
+.panel-1 .linkButton {
+    background-color: rgb(52, 37, 31);
     color: white;
     font-size: 0.9rem;
     letter-spacing: 1px;
@@ -56,9 +53,9 @@
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-    border-radius: 2px;
     padding: 8px 18px;
     text-decoration: none;
+    border-radius: 4px;
     cursor: pointer;
     filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.3));
     margin-top: 1.5rem;
@@ -66,10 +63,11 @@
 }
 
 .panel-2 {
-    width: 45%;
+    width: 50%;
+    padding-right: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     height: 100%;
 }
@@ -121,7 +119,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(360deg, #D3A17E -21.17%, rgba(211, 161, 126, 0) 115.88%);
+    background: linear-gradient(360deg,
+            #d3a17e -21.17%,
+            rgba(211, 161, 126, 0) 115.88%);
     opacity: 0.35;
 }
 
@@ -131,7 +131,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(360deg, #D3A17E -21.17%, rgba(211, 161, 126, 0) 115.88%);
+    background: linear-gradient(360deg,
+            #d3a17e -21.17%,
+            rgba(211, 161, 126, 0) 115.88%);
     opacity: 0.35;
     transform: rotate(90deg);
 }
@@ -142,7 +144,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(360deg, #D3A17E -21.17%, rgba(211, 161, 126, 0) 115.88%);
+    background: linear-gradient(360deg,
+            #d3a17e -21.17%,
+            rgba(211, 161, 126, 0) 115.88%);
     opacity: 0.35;
     transform: rotate(270deg);
 }
@@ -153,7 +157,82 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(360deg, #D3A17E -21.17%, rgba(211, 161, 126, 0) 115.88%);
+    background: linear-gradient(360deg,
+            #d3a17e -21.17%,
+            rgba(211, 161, 126, 0) 115.88%);
     opacity: 0.35;
     transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+    .panel-1 h1 {
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
+    .panel-1 h4 {
+        width: 80%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 24px;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 700px) {
+    .homePanel {
+        flex-direction: column-reverse;
+    }
+
+    .panel-1 {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .panel-1 h1 {
+        font-size: 2.5rem;
+        line-height: 32px;
+    }
+
+    .panel-1 h4 {
+        width: 80%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 20px;
+        margin: 0px;
+    }
+
+    .panel-1 .linkButton {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .linearGradVert,
+    .linearGradHorizontal,
+    .linearGradVert-top,
+    .linearGradHorizontal-top {
+        display: none;
+    }
+
+    .panel-2 {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .modelHomePage {
+        position: relative;
+        width: 350px;
+        box-shadow: 30px 20px 50px rgba(129, 105, 84, 0.322);
+        border-radius: 4px;
+        z-index: 100;
+    }
 }

@@ -1,25 +1,41 @@
 .shoppingCartContainer {
-    height: auto;
-    width: 500px;
+    height: 50vh;
     background-color: var(--secondary);
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 0px;
     z-index: 999;
-    padding: 30px 2rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border-left: 1px solid var(--text-primary);
-    border-bottom: 1px solid var(--text-primary);
-    overflow-y: visible;
-    scroll-behavior: smooth;
-    scrollbar-width: 0px;
+    border-left: 3px solid var(--text-primary);
+    border-bottom: 3px solid var(--text-primary);
+
+}
+
+.shoppingCartContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .itemsCardsDiv {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 255px;
     width: 100%;
+    padding: 0px 1.25rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: 1px;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 500px) {
+    .shoppingCartContainer {
+        width: 100vw;
+        padding: 1rem;
+        border-bottom: 3px solid var(--text-primary);
+    }
 }

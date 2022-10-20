@@ -9,7 +9,11 @@ export const ShoppingCart = () => {
   const itemsCards = cartItems.map((item) => {
     if (item.quantity > 0) {
       return (
-        <ShoppingCartItem id={item.id} quantity={item.quantity} key={item.id} />
+        <ShoppingCartItem
+          id={item.id}
+          quantity={item.quantity}
+          key={item.id}
+        />
       )
     } else {
       return null
@@ -17,22 +21,21 @@ export const ShoppingCart = () => {
   })
   return (
     <>
-      {cartItems.length > 0
-        ? (
-          <div className='shoppingCartContainer'>
-            <div className='itemsCardsDiv'>
-              {itemsCards}
-            </div>
-            <h2>Total: {formatCurrency(
+      {cartItems.length > 0 ? (
+        <div className='shoppingCartContainer'>
+          <h1>Shopping Cart</h1>
+          <div className='itemsCardsDiv'>{itemsCards}</div>
+          <h2>
+            Total:{' '}
+            {formatCurrency(
               cartItems.reduce((total, cartItem) => {
-                const item = products.find(i => i.id === cartItem.id)
+                const item = products.find((i) => i.id === cartItem.id)
                 return total + (item?.price || 0) * cartItem.quantity
               }, 0)
             )}
-            </h2>
-          </div>
-          )
-        : null}
+          </h2>
+        </div>
+      ) : null}
     </>
   )
 }
